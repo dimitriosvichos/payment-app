@@ -1,4 +1,6 @@
-const Button = ({ className, variant, children, onClick }) => {
+import React from 'react';
+
+const Button = ({ className, variant, children, onClick, onMouseEnter, onMouseLeave }) => {
   const determineVariant = () => {
     switch (variant) {
       case 'outline':
@@ -15,10 +17,27 @@ const Button = ({ className, variant, children, onClick }) => {
     }
   };
 
+  const handleMouseEnter = (e) => {
+    if (onMouseEnter) {
+      onMouseEnter(e);
+    }
+  };
+
+  const handleMouseLeave = (e) => {
+    if (onMouseLeave) {
+      onMouseLeave(e);
+    }
+  };
+
   return (
     <button
       className={`flex items-center justify-center ${determineVariant()} ${className}`}
       onClick={handleClick}
+      onMouseEnter={handleMouseEnter}
+      onMouseLeave={handleMouseLeave}
+      style={{
+        transition: 'transform 500ms ease-in-out',
+      }}
     >
       {children}
     </button>

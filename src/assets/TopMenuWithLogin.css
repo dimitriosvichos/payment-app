@@ -1,0 +1,25 @@
+.normal-button {
+    background-color: transparent;
+    color: black;
+    font-weight: bold;
+    padding: 3px 18px;
+    font-size: 1rem;
+}
+
+.normal-button:hover {
+    background-color: black;
+    padding: 3px 18px;
+    color: white;
+}
+
+.active-button {
+    padding: 3px 18px;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+}
+
+.active-button:hover {
+    background-color: black;
+}

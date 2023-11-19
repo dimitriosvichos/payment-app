@@ -1,11 +1,18 @@
 import './assets/App.css';
 import LeftSideMenu from './components/LeftSideMenu';
+import TopMenuWithLogin from './components/TopMenuWithLogin'
 
 function App() {
   return (
     <div className="App">
-      <LeftSideMenu />
-      {/* <img src='./assets/mountain-card.jpg'></img> */}
+      <div className="flex">
+        <div className="left">
+          <LeftSideMenu />
+        </div>
+        <div className="middle w-full">
+          <TopMenuWithLogin />
+        </div>
+      </div>
     </div>
   );
 }
