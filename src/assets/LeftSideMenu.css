@@ -1,0 +1,78 @@
+.account-balance {
+    margin: 10px 30px;
+    border-radius: 20px;
+    background: rgb(244,240,236);
+    background: linear-gradient(0deg, rgb(244, 237, 230) 0%, rgb(251, 248, 246) 100%);
+}
+
+.break {
+    background-color: white;
+    width: 100%;
+    height: 2px;
+}
+
+.sidebar {
+    width: 380px;
+    transition: width 0.5s ease-in-out;
+}
+
+.sidebar-closed {
+    width: 73px;
+    transition: width 0.5s ease-in-out;
+    transition-delay: 0.5s;
+}
+
+.show-menu-content {
+    opacity: 1;
+    transition: opacity 0.2s ease-in-out, height 0.3s ease-in-out;
+    transition-delay: 0.5s
+}
+
+.hidden-menu-content {
+    opacity: 0;
+    transition: opacity 0.1s ease-in-out, height 0.3s ease-in-out;
+}
+
+.cards-container {
+    margin: 20px 10px;
+}
+
+.cards-content-item {
+    height: 200px;
+    border-radius: 7%;
+    margin-bottom: 15px;
+}
+
+.first-card {
+    background-image: url("./planet-card-first.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.second-card {
+    background-image: url("./mountain-card.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.cards-content-item-right {
+    width: 40px;
+}
+
+.company-logo {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, width 0.5s ease-in-out, transform 4s ease-in-out;
+}
+
+.fade-out {
+    opacity: 0;
+    transform: translateX(-100%);
+}
+
+.fade-in {
+    opacity: 1;
+    transition: opacity 0.5s ease-in-out, width 0.1s ease-in-out;
+    transition-delay: 0.3s;
+}
